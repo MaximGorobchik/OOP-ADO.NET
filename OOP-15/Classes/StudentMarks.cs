@@ -23,8 +23,8 @@ public class StudentMarks : IStudentMarks
                     string surname = reader.GetString(2);
                     string groupname = reader.GetString(3);
                     double avgmark = reader.GetDouble(4);
-                    double minavgsubjectmark = reader.GetDouble(5);
-                    double maxavgsubjectmark = reader.GetDouble(6);
+                    double minavgsubjectmark = reader.GetString(5);
+                    double maxavgsubjectmark = reader.GetString(6);
                 Console.WriteLine("{0} \t{1} \t\t{2} \t{3} \t\t{4} \t   {5} \t\t\t{6}", lastname,firstname,surname,groupname,avgmark,minavgsubjectmark,maxavgsubjectmark);//вивід даних
             }
             Console.ForegroundColor = ConsoleColor.White;
